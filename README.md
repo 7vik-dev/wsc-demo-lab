@@ -14,6 +14,9 @@ This project simulates a simple project voting application with JWT-based admin 
 - Dark theme UI with glassmorphism cards
 - Render-ready deployment setup
 
+## Security Assessment Guide
+- See the full report: [SECURITY_ASSESSMENT.md](./SECURITY_ASSESSMENT.md)
+
 ## Intentional Vulnerabilities
 1. Weak JWT secret (`wsc_weak_secret`)
 2. Public debug endpoint: `GET /api/debug/config`
