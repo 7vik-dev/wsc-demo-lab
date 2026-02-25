@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vote | WSC Demo Lab</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Project Voting</h1>
+      <p>Select a project and submit your score.</p>
+
+      <label class="toggle-row">
+        <input type="checkbox" id="disableVotingToggle" />
+        <span>Voting Disabled (Frontend Only)</span>
+      </label>
+
+      <form id="voteForm">
+        <label for="voterName">Your Name</label>
+        <input id="voterName" type="text" placeholder="Jane Doe" required />
+
+        <label for="projectSelect">Project</label>
+        <select id="projectSelect" required></select>
+
+        <label for="score">Score</label>
+        <input id="score" type="number" placeholder="1-10" required />
+
+        <button class="btn" type="submit">Submit Vote</button>
+      </form>
+
+      <p id="voteStatus" class="status"></p>
+      <a class="link" href="/index.html">Back to Home</a>
+    </section>
+  </main>
+
+  <script src="/js/vote.js"></script>
+</body>
+</html>

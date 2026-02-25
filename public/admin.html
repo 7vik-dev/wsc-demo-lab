@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | WSC Demo Lab</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Admin Panel</h1>
+      <p>Log in to view submitted votes.</p>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="admin@wsc.local" required />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="Password" required />
+
+        <button class="btn" type="submit">Login</button>
+      </form>
+
+      <div class="actions top-gap">
+        <button id="loadVotesBtn" class="btn" type="button">Load Votes</button>
+      </div>
+
+      <p id="adminStatus" class="status"></p>
+      <pre id="votesOutput" class="output"></pre>
+      <a class="link" href="/index.html">Back to Home</a>
+    </section>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

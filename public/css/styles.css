@@ -1,0 +1,121 @@
+:root {
+  --bg: #0d1117;
+  --panel: rgba(255, 255, 255, 0.09);
+  --text: #e6edf3;
+  --muted: #9da7b3;
+  --accent: #4fb3ff;
+  --border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1d2733, var(--bg) 45%),
+    radial-gradient(circle at 80% 10%, #1b3552, transparent 35%);
+  color: var(--text);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(560px, 100%);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+p,
+label,
+span {
+  color: var(--muted);
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+input,
+select,
+button,
+.btn {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text);
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.btn,
+button {
+  background: linear-gradient(135deg, #2563eb, var(--accent));
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 4px;
+}
+
+.status {
+  min-height: 20px;
+  margin-top: 12px;
+  color: #b5e3ff;
+}
+
+.output {
+  min-height: 120px;
+  max-height: 260px;
+  overflow: auto;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.link {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--accent);
+}
+
+.top-gap {
+  margin-top: 10px;
+}
